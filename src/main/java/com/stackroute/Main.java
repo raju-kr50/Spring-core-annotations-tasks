@@ -11,9 +11,9 @@ public class Main {
         //***********************************************Task1**********************************************************
         ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
         Movie movie = context.getBean("movie", Movie.class);
-        Movie movie1 = context.getBean("movie", Movie.class);
+//        Movie movie1 = context.getBean("movie", Movie.class);
         System.out.println(movie.getActor());
-        System.out.println(movie==movie1);
+//        System.out.println(movie==movie1);
 
     //**************************************************Task2***********************************************************
         Actor actor = context.getBean("actor", Actor.class);
