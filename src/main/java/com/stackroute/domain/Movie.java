@@ -8,21 +8,21 @@ public class Movie {
 
     private Actor actor;
 
-    @Autowired
+//    @Autowired
     public Movie() {
     }
 
-    @Autowired
+//    @Autowired
     public Movie(Actor actor) {
         this.actor = actor;
     }
 
-    @Autowired
+//    @Autowired
     public Actor getActor() {
         return actor;
     }
 
-    @Autowired
+//    @Autowired
     public void setActor(Actor actor) {
         this.actor = actor;
     }
