@@ -1,5 +1,6 @@
 package com.stackroute.domain;
 
+import com.stackroute.demo.BeanLifecycleDemoBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,5 +25,18 @@ public class Config {
         movie.setActor(actor());
         return movie;
     }
+
+    @Bean(name="beanLifecycleDemoBean")
+    public BeanLifecycleDemoBean beanLifecycleDemoBean() throws Exception {
+        BeanLifecycleDemoBean beanLifecycleDemoBean = new BeanLifecycleDemoBean();
+
+         return beanLifecycleDemoBean;
+    }
+
+//    @Bean(name="beanPostProcessorBean")
+//    public BeanPostProcessorBean beanPostProcessorBean() {
+//        BeanPostProcessorBean beanPostProcessorBean = new BeanPostProcessorBean();
+//        return  beanPostProcessorBean;
+//    }
 
 }
