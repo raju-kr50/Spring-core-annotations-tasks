@@ -33,10 +33,10 @@ public class Config {
          return beanLifecycleDemoBean;
     }
 
-//    @Bean(name="beanPostProcessorBean")
-//    public BeanPostProcessorBean beanPostProcessorBean() {
-//        BeanPostProcessorBean beanPostProcessorBean = new BeanPostProcessorBean();
-//        return  beanPostProcessorBean;
-//    }
+    @Bean(name="beanPostProcessorBean")
+    public BeanPostProcessorBean beanPostProcessorBean() {
+        BeanPostProcessorBean beanPostProcessorBean = new BeanPostProcessorBean();
+        return  beanPostProcessorBean;
+    }
 
 }

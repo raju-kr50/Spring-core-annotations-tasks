@@ -3,6 +3,7 @@ package com.stackroute;
 import com.stackroute.demo.BeanLifecycleDemoBean;
 import com.stackroute.domain.Actor;
 //import com.stackroute.domain.BeanPostProcessorBean;
+import com.stackroute.domain.BeanPostProcessorBean;
 import com.stackroute.domain.Config;
 import com.stackroute.domain.Movie;
 import org.springframework.context.ApplicationContext;
@@ -28,8 +29,8 @@ public class Main {
 //        System.out.println(beanLifecycleDemoBean);
         context1.close();
 
-//        BeanPostProcessorBean beanPostProcessorBean = context.getBean("beanPostProcessorBean", BeanPostProcessorBean.class);
-//        System.out.println(beanPostProcessorBean);
+        BeanPostProcessorBean beanPostProcessorBean = context.getBean("beanPostProcessorBean", BeanPostProcessorBean.class);
+        System.out.println(beanPostProcessorBean);
     }
 
 
